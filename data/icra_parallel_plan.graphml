@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d1" for="port" attr.name="portkind" attr.type="string"/>
+  <key id="d2" for="port" attr.name="value" attr.type="json"/>
+  <graph edgedefault="directed">
+    <node id="root">
+      <port name="in1">
+        <data key="d1">input</data>
+        <data key="d2">[1]</data>
+      </port>
+      <port name="in2">
+        <data key="d1">input</data>
+        <data key="d2">[2]</data>
+      </port>
+      <port name="in3">
+        <data key="d1">input</data>
+        <data key="d2">[3]</data>
+      </port>
+      <port name="in4">
+        <data key="d1">input</data>
+        <data key="d2">[4]</data>
+      </port>
+      <port name="in5">
+        <data key="d1">input</data>
+        <data key="d2">[5]</data>
+      </port>
+      <port name="in6">
+        <data key="d1">input</data>
+        <data key="d2">[6]</data>
+      </port>
+      <port name="in7">
+        <data key="d1">input</data>
+        <data key="d2">[7]</data>
+      </port>
+      <port name="in8">
+        <data key="d1">input</data>
+        <data key="d2">[8]</data>
+      </port>
+      <port name="in9">
+        <data key="d1">input</data>
+        <data key="d2">[9]</data>
+      </port>
+      <port name="out1">
+        <data key="d1">output</data>
+        <data key="d2">[1,2,3,4,5,6,7,8,9]</data>
+      </port>
+      <graph id="root:graph">
+        <node id="n3">
+          <port name="in1">
+            <data key="d1">input</data>
+            <data key="d2">[1]</data>
+          </port>
+          <port name="in2">
+            <data key="d1">input</data>
+            <data key="d2">[8]</data>
+          </port>
+          <port name="out1">
+            <data key="d1">output</data>
+            <data key="d2">[1,8]</data>
+          </port>
+        </node>
+        <node id="n4">
+          <port name="in1">
+            <data key="d1">input</data>
+            <data key="d2">[2]</data>
+          </port>
+          <port name="in2">
+            <data key="d1">input</data>
+            <data key="d2">[3]</data>
+          </port>
+          <port name="out1">
+            <data key="d1">output</data>
+            <data key="d2">[2,3]</data>
+          </port>
+        </node>
+        <node id="n5">
+          <port name="in1">
+            <data key="d1">input</data>
+            <data key="d2">[4]</data>
+          </port>
+          <port name="in2">
+            <data key="d1">input</data>
+            <data key="d2">[6]</data>
+          </port>
+          <port name="in3">
+            <data key="d1">input</data>
+            <data key="d2">[9]</data>
+          </port>
+          <port name="out1">
+            <data key="d1">output</data>
+            <data key="d2">[4,6,9]</data>
+          </port>
+          <graph id="n5:graph">
+            <node id="n5n3">
+              <port name="in1">
+                <data key="d1">input</data>
+                <data key="d2">[9]</data>
+              </port>
+              <port name="in2">
+                <data key="d1">input</data>
+                <data key="d2">[6]</data>
+              </port>
+              <port name="out1">
+                <data key="d1">output</data>
+                <data key="d2">[6,9]</data>
+              </port>
+            </node>
+            <node id="n5n4">
+              <port name="in1">
+                <data key="d1">input</data>
+                <data key="d2">[6,9]</data>
+              </port>
+              <port name="in2">
+                <data key="d1">input</data>
+                <data key="d2">[4]</data>
+              </port>
+              <port name="out1">
+                <data key="d1">output</data>
+                <data key="d2">[4,6,9]</data>
+              </port>
+            </node>
+            <edge id="n5e1" source="n5" sourceport="in3" target="n5n3" targetport="in1"/>
+            <edge id="n5e2" source="n5" sourceport="in2" target="n5n3" targetport="in2"/>
+            <edge id="n5e3" source="n5" sourceport="in1" target="n5n4" targetport="in2"/>
+            <edge id="n5e4" source="n5n3" sourceport="out1" target="n5n4" targetport="in1"/>
+            <edge id="n5e5" source="n5n4" sourceport="out1" target="n5" targetport="out1"/>
+          </graph>
+        </node>
+        <node id="n6">
+          <port name="in1">
+            <data key="d1">input</data>
+            <data key="d2">[5]</data>
+          </port>
+          <port name="in2">
+            <data key="d1">input</data>
+            <data key="d2">[7]</data>
+          </port>
+          <port name="out1">
+            <data key="d1">output</data>
+            <data key="d2">[5,7]</data>
+          </port>
+        </node>
+        <node id="n7">
+          <port name="in1">
+            <data key="d1">input</data>
+            <data key="d2">[4,6,9]</data>
+          </port>
+          <port name="in2">
+            <data key="d1">input</data>
+            <data key="d2">[5,7]</data>
+          </port>
+          <port name="out1">
+            <data key="d1">output</data>
+            <data key="d2">[4,5,6,7,9]</data>
+          </port>
+        </node>
+        <node id="n8">
+          <port name="in1">
+            <data key="d1">input</data>
+            <data key="d2">[2,3]</data>
+          </port>
+          <port name="in2">
+            <data key="d1">input</data>
+            <data key="d2">[4,5,6,7,9]</data>
+          </port>
+          <port name="out1">
+            <data key="d1">output</data>
+            <data key="d2">[2,3,4,5,6,7,9]</data>
+          </port>
+        </node>
+        <node id="n9">
+          <port name="in1">
+            <data key="d1">input</data>
+            <data key="d2">[1,8]</data>
+          </port>
+          <port name="in2">
+            <data key="d1">input</data>
+            <data key="d2">[2,3,4,5,6,7,9]</data>
+          </port>
+          <port name="out1">
+            <data key="d1">output</data>
+            <data key="d2">[1,2,3,4,5,6,7,8,9]</data>
+          </port>
+        </node>
+        <edge id="e1" source="root" sourceport="in1" target="n3" targetport="in1"/>
+        <edge id="e2" source="root" sourceport="in8" target="n3" targetport="in2"/>
+        <edge id="e3" source="root" sourceport="in2" target="n4" targetport="in1"/>
+        <edge id="e4" source="root" sourceport="in3" target="n4" targetport="in2"/>
+        <edge id="e5" source="root" sourceport="in4" target="n5" targetport="in1"/>
+        <edge id="e6" source="root" sourceport="in6" target="n5" targetport="in2"/>
+        <edge id="e7" source="root" sourceport="in9" target="n5" targetport="in3"/>
+        <edge id="e8" source="root" sourceport="in5" target="n6" targetport="in1"/>
+        <edge id="e9" source="root" sourceport="in7" target="n6" targetport="in2"/>
+        <edge id="e10" source="n3" sourceport="out1" target="n9" targetport="in1"/>
+        <edge id="e11" source="n4" sourceport="out1" target="n8" targetport="in1"/>
+        <edge id="e12" source="n5" sourceport="out1" target="n7" targetport="in1"/>
+        <edge id="e13" source="n6" sourceport="out1" target="n7" targetport="in2"/>
+        <edge id="e14" source="n7" sourceport="out1" target="n8" targetport="in2"/>
+        <edge id="e15" source="n8" sourceport="out1" target="n9" targetport="in2"/>
+        <edge id="e16" source="n9" sourceport="out1" target="root" targetport="out1"/>
+      </graph>
+    </node>
+  </graph>
+</graphml>

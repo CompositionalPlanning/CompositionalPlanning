@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key attr.name="layer" attr.type="double" for="edge" id="d10"/>
+<key attr.name="rotation" attr.type="long" for="node" id="d9"/>
+<key attr.name="z" attr.type="long" for="node" id="d8"/>
+<key attr.name="y" attr.type="long" for="node" id="d7"/>
+<key attr.name="x" attr.type="long" for="node" id="d6"/>
+<key attr.name="height" attr.type="long" for="node" id="d5"/>
+<key attr.name="length" attr.type="long" for="node" id="d4"/>
+<key attr.name="width" attr.type="long" for="node" id="d3"/>
+<key attr.name="color" attr.type="string" for="node" id="d2"/>
+<key attr.name="ref" attr.type="string" for="node" id="d1"/>
+<key attr.name="type" attr.type="string" for="node" id="d0"/>
+<graph edgedefault="directed"><node id="1">
+  <data key="d0">Brick</data>
+  <data key="d1">3003.dat</data>
+  <data key="d2">white</data>
+  <data key="d3">40</data>
+  <data key="d4">40</data>
+  <data key="d5">24</data>
+  <data key="d6">180</data>
+  <data key="d7">-24</data>
+  <data key="d8">20</data>
+  <data key="d9">0</data>
+</node>
+<node id="2">
+  <data key="d0">Brick</data>
+  <data key="d1">3003.dat</data>
+  <data key="d2">white</data>
+  <data key="d3">40</data>
+  <data key="d4">40</data>
+  <data key="d5">24</data>
+  <data key="d6">180</data>
+  <data key="d7">-48</data>
+  <data key="d8">0</data>
+  <data key="d9">0</data>
+</node>
+<node id="3">
+  <data key="d0">Brick</data>
+  <data key="d1">3003.dat</data>
+  <data key="d2">white</data>
+  <data key="d3">40</data>
+  <data key="d4">40</data>
+  <data key="d5">24</data>
+  <data key="d6">180</data>
+  <data key="d7">-72</data>
+  <data key="d8">-20</data>
+  <data key="d9">0</data>
+</node>
+<node id="4">
+  <data key="d0">Brick</data>
+  <data key="d1">3622.dat</data>
+  <data key="d2">black</data>
+  <data key="d3">20</data>
+  <data key="d4">60</data>
+  <data key="d5">24</data>
+  <data key="d6">90</data>
+  <data key="d7">-48</data>
+  <data key="d8">-50</data>
+  <data key="d9">0</data>
+</node>
+<node id="5">
+  <data key="d0">Brick</data>
+  <data key="d1">3002.dat</data>
+  <data key="d2">red</data>
+  <data key="d3">60</data>
+  <data key="d4">40</data>
+  <data key="d5">24</data>
+  <data key="d6">100</data>
+  <data key="d7">-72</data>
+  <data key="d8">-30</data>
+  <data key="d9">270</data>
+</node>
+<node id="6">
+  <data key="d0">Brick</data>
+  <data key="d1">3001.dat</data>
+  <data key="d2">black</data>
+  <data key="d3">40</data>
+  <data key="d4">80</data>
+  <data key="d5">24</data>
+  <data key="d6">80</data>
+  <data key="d7">-24</data>
+  <data key="d8">-40</data>
+  <data key="d9">0</data>
+</node>
+<node id="7">
+  <data key="d0">Brick</data>
+  <data key="d1">3001.dat</data>
+  <data key="d2">white</data>
+  <data key="d3">40</data>
+  <data key="d4">80</data>
+  <data key="d5">24</data>
+  <data key="d6">140</data>
+  <data key="d7">-96</data>
+  <data key="d8">-40</data>
+  <data key="d9">0</data>
+</node>
+<node id="8">
+  <data key="d0">Ground</data>
+  <data key="d6">180</data>
+  <data key="d7">0</data>
+  <data key="d8">20</data>
+</node>
+<node id="9">
+  <data key="d0">Ground</data>
+  <data key="d6">80</data>
+  <data key="d7">0</data>
+  <data key="d8">-40</data>
+</node>
+<edge source="1" target="2">
+  <data key="d10">-1.0</data>
+</edge>
+<edge source="2" target="3">
+  <data key="d10">-2.0</data>
+</edge>
+<edge source="3" target="7">
+  <data key="d10">-3.0</data>
+</edge>
+<edge source="4" target="5">
+  <data key="d10">-2.0</data>
+</edge>
+<edge source="5" target="7">
+  <data key="d10">-3.0</data>
+</edge>
+<edge source="6" target="4">
+  <data key="d10">-1.0</data>
+</edge>
+<edge source="8" target="1"/>
+<edge source="9" target="6"/>
+</graph></graphml>
